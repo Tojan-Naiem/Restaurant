@@ -2,11 +2,18 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: 'Neue Kabel Pro Light';
+    src: url('path-to-font-file.woff2') format('woff2');
+}
+html{
+    /* font-family: sans-serif; */
+}
 body{
     height: 100vh;
     width: 100%;
     background-color: rgb(244, 237, 229);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 100;
 }
 .container{
@@ -39,15 +46,18 @@ header a{
     text-decoration: none;
     font-size: 20px;
     transition: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+
 
   
 }
 header ul li {
     margin-left: 15px;
 }
-header ul li a:hover{
+header  a:hover{
     color: red;
 }
+
 header .title{
     width: 20px;
     padding-left: 40px;
@@ -61,6 +71,12 @@ header .list{
     background-color: red;
     position: relative;
     top: 40px;
+}
+
+@media (max-width:800px){
+    header .menu{
+        display: none;
+    }
 }
 .contant{
     height: 100vh;
@@ -81,8 +97,9 @@ header .list{
 }
  .first-one{
 }
-.first-section .first-one h1{
+ h1,h2{
     font-size: 50px;
+    font-family: 'Raleway', sans-serif;
 
 }
 .first-one .buttons{
@@ -186,46 +203,69 @@ header .list{
     font-size: 25px;
 
 }
+@media (max-width:800px){
+    .second-one img{
+        display: none;
+    }
+    .second-one .buttons{
+        display: none;
+    }
+    .desc {
+        display: none;
+    }
+    .first-one .buttons a:last-of-type{
+        display: none;
+    }
+}
 .second-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
     padding: 30px;
     padding-left: 80px;
     padding-right: 80px;
     margin: 0 20px 0px 20px;
     background-color: white;
     height: 600px;
-    gap: 100px;
- 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
 }
 .second-section .first-part {
-    background-color: red;
-    width: 1800px;
     height: 100%;
-    overflow: hidden;
+    width: 30%;
+    margin-right: 50px;
 }
 .second-section .first-part img{
     width: 100%;
     height: 100%;
 
 }
+.second-section .second-part {
+    width: 70%;
+    
+}
 .second-section .second-part p:first-of-type{
-    color: red;
+color: red;
 
 }
 .second-section .second-part h2{
     font-size: 30px;
     margin-bottom: 25px;
+    font-weight: 800;
 }
 .second-section .second-part p{
     color: black;
     font-weight: 200;
     margin-bottom:30px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+   
 }
 .second-section .second-part .cards{
     display: flex;
     justify-content: space-between;
+    width: 65%;
 }
 .second-section .second-part a{
     display: flex;
@@ -233,8 +273,31 @@ header .list{
     justify-content: center;
     align-items: center;
     color: red;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: start;
+
 }
 .second-section .second-part img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+@media (max-width:700px){
+    .second-section .first-part {
+        display: none;
+    }
+    .second-section .second-part{
+        margin-top: 100px;
+    }
+    .second-section .second-part p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* عدد الأسطر التي يمكن عرضها */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+    }
+    .second-section .second-part .cards{
+        display: none;
+    }
 }
