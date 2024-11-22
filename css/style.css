@@ -10,12 +10,7 @@ body{
     font-weight: 100;
 }
 .container{
-    background-color: white;
-    margin: 20px;
-    height: 100vh;
-    padding: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
+    
 
 
 }
@@ -23,6 +18,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px;
+    margin: 20px 20px 0px 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+
 
 }
 header .menu{
@@ -63,15 +64,22 @@ header .list{
 }
 .contant{
     height: 100vh;
+  
+
 
 }
-.contant .first-section{
+ .first-section{
     display: flex;
-    gap: 100px;
-    margin-top: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    margin: 0 20px 0px 20px;
 
 }
-.contant .first-one{
+ .first-one{
 }
 .first-section .first-one h1{
     font-size: 50px;
@@ -142,4 +150,91 @@ header .list{
     font-size: 40px;
     color: rgb(53, 53, 53);
     margin-bottom: 20px;
+}
+.second-one{
+    width: 50%;
+    
+    
+}
+.second-one img{
+    width: 100%;
+    height: 60vh;
+    background-color: red;
+    transition: 0.5s;
+   
+}
+.second-one .buttons{
+    position: relative;
+    top: -100px;
+    display: flex;
+    background-color: gray;
+    justify-content: space-between;
+    left: 70%;
+    width: 30%;
+}
+.second-one .buttons a{
+    background-color: white;
+    text-decoration: none;
+    width: 49.7%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 100px;
+    font-weight: 700;
+    font-size: 25px;
+
+}
+.second-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 20px 0px 20px;
+    background-color: white;
+    height: 600px;
+    gap: 100px;
+ 
+}
+.second-section .first-part {
+    background-color: red;
+    width: 1800px;
+    height: 100%;
+    overflow: hidden;
+}
+.second-section .first-part img{
+    width: 100%;
+    height: 100%;
+
+}
+.second-section .second-part p:first-of-type{
+    color: red;
+
+}
+.second-section .second-part h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.second-section .second-part p{
+    color: black;
+    font-weight: 200;
+    margin-bottom:30px;
+}
+.second-section .second-part .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.second-section .second-part a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.second-section .second-part img{
+    width: 200px;
+    height: 200px;
 }

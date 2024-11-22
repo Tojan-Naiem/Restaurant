@@ -6,29 +6,30 @@
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
-
     />
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Restaurant</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <a href="#">
-          <i class="fa fa-bars"></i>
-        </a>
-        <ul class="menu">
-          <li>
-            <a href="#"> Home </a>
-          </li>
-          <li>
-            <a href="#"> About </a>
-          </li>
-          <li>
-            <a href="#"> Special Dishes </a>
-            <!-- <div class="list">
+    <header>
+      <a href="#">
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="#"> Home </a>
+        </li>
+        <li>
+          <a href="#"> About </a>
+        </li>
+        <li>
+          <a href="#"> Special Dishes </a>
+          <!-- <div class="list">
               <ul>
                 <li>
                   <a href="#"> Beef Steak Sauce </a>
@@ -38,69 +39,103 @@
                 </li>
               </ul>
             </div> -->
-          </li>
-          <li>
-            <a href="#" class="title">
-              <img src="img/logo.png" />
-            </a>
-          </li>
-          <li>
-            <a href="#"> Menu </a>
-          </li>
-          <li>
-            <a href="#"> Team </a>
-          </li>
-          <li>
-            <a href="#"> Reservation </a>
-          </li>
-        </ul>
+        </li>
+        <li>
+          <a href="#" class="title">
+            <img src="img/logo.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#"> Menu </a>
+        </li>
+        <li>
+          <a href="#"> Team </a>
+        </li>
+        <li>
+          <a href="#"> Reservation </a>
+        </li>
+      </ul>
 
-        <a href="#">
-          <i class="fa fa-search"></i>
-        </a>
-      </header>
-      <div class="contant">
-        <div class="first-section">
-            <div class="first-one">
-                <h1>We Love <br>Delicious Foods!</h1>
-                 <div class="buttons">
-                    <a href="#">Explore Menu</a>
-                    <a href="#"><i class="fa fa-video"></i>Play Video</a>
-                 </div>
-                 <div class="desc">
-                    <div class="box">
-                        <i class="lnr lnr-rocket"></i>
-                        <h4>Fast Delivery</h4>
-                    </div>
-                    <div class="line"></div>
-                    <div class="box">
-                        <i class="lnr lnr-leaf"></i>
-                        <h4>Fresh Food </h4>
-                    </div>
-                    <div class="line"></div>
+      <a href="#">
+        <i class="fa fa-search"></i>
+      </a>
+    </header>
 
-                    <div class="box">
-                        <i class="lnr lnr-bubble"></i>
-                        <h4>24/7 Support</h4>
+    <div class="first-section">
+      <div class="first-one">
+        <h1>We Love <br />Delicious Foods!</h1>
+        <div class="buttons">
+          <a href="#">Explore Menu</a>
+          <a href="#"><i class="fa fa-video"></i>Play Video</a>
+        </div>
+        <div class="desc">
+          <div class="box">
+            <i class="lnr lnr-rocket"></i>
+            <h4>Fast Delivery</h4>
+          </div>
+          <div class="line"></div>
+          <div class="box">
+            <i class="lnr lnr-leaf"></i>
+            <h4>Fresh Food</h4>
+          </div>
+          <div class="line"></div>
 
-                    </div>
-                
-                        
-                 </div>
-            </div>
-            <div class="second-one">
-                <div class="box-img">
+          <div class="box">
+            <i class="lnr lnr-bubble"></i>
+            <h4>24/7 Support</h4>
+          </div>
+        </div>
+      </div>
+      <div class="second-one">
+        <img src="img/hero-1.jpg" id="img" alt="hero1" />
 
-                </div>
-                <div class="buttons">
-                    <button><i class="fa fa-next"></i></button>
-                    <button><i class="fa fa-search"></i></button>
-
-                </div>
-            </div>
-
+        <div class="buttons">
+          <a href="#" onclick="ChangeBackground()"><</a>
+          <a href="#" onclick="back()">></a>
         </div>
       </div>
     </div>
+    <div class="second-section">
+      <div class="first-part">
+        <img src="img/hero-2.jpg" />
+      </div>
+      <div class="second-part">
+        <p>About</p>
+        <h2>Welcome to Resto</h2>
+        <p>
+          On her way she met a copy. The copy warned the Little Blind Text, that
+          where it came from it would have been rewritten a thousand times and
+          everything that was left from its origin would be the word "and" and
+          the Little Blind Text should turn around and return to its own, safe
+          country. A small river named Duden flows by their place and supplies
+          it with the necessary regelialia. It is a paradisematic country, in
+          which roasted parts of sentences fly into your mouth.
+        </p>
+        <h2>Special Recipe</h2>
+        <div class="cards">
+            <a ><img src="img/hero-1.jpg" />Australian Organic Beef</a>
+            <a><img src="img/hero-1.jpg" />Australian Organic Beef</a>
+            <a ><img src="img/hero-1.jpg" />Australian Organic Beef</a>
+        </div>
+       
+      </div>
+    </div>
+
+    <script>
+      var i = 0;
+      var imgs = ["img/hero-1.jpg", "img/hero-2.jpg", "img/hero-3.jpg"];
+
+      function ChangeBackground() {
+        i++;
+
+        if (i == 3) i = 0;
+        document.getElementById("img").src = imgs[i];
+      }
+      function back() {
+        i--;
+        if (i < 0) i = 2;
+        document.getElementById("img").src = imgs[i];
+      }
+    </script>
   </body>
 </html>
