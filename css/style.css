@@ -97,7 +97,7 @@ header .list{
 }
  .first-one{
 }
- h1,h2{
+.first-one h1,h2{
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
 
@@ -174,8 +174,8 @@ header .list{
     
 }
 .second-one img{
-    width: 100%;
-    height: 60vh;
+    width: 90%;
+    height: 70vh;
     background-color: red;
     transition: 0.5s;
    
@@ -186,13 +186,13 @@ header .list{
     display: flex;
     background-color: gray;
     justify-content: space-between;
-    left: 70%;
+    left: 60%;
     width: 30%;
 }
 .second-one .buttons a{
     background-color: white;
     text-decoration: none;
-    width: 49.7%;
+    width: 49.8%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -200,7 +200,7 @@ header .list{
     color: black;
     height: 100px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 @media (max-width:800px){
@@ -265,7 +265,7 @@ color: red;
 .second-section .second-part .cards{
     display: flex;
     justify-content: space-between;
-    width: 65%;
+    width: 60%;
 }
 .second-section .second-part a{
     display: flex;
@@ -297,7 +297,115 @@ color: red;
         overflow: hidden;
 
     }
-    .second-section .second-part .cards{
-        display: none;
-    }
+  
+}
+
+
+/* special-dishes-section */
+
+
+.special-dishes-section{
+    background-color: rgb(247, 248, 249);
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:70px;
+}
+.special-dishes-section h2{
+    font-size: 30px;
+}
+.special-dishes-section .title{
+    text-align: center;
+
+    
+}
+.special-dishes-section .title h5{
+    font-family: 'Raleway', sans-serif;
+    color: red;
+    font-weight: 300;
+
+}
+.special-dishes-section .title h2{
+    font-weight: 800;
+}
+.special-dishes-section .body{
+    display: flex;
+    margin: 50px 0px 50px 0;
+    height: 100%;
+
+
+}
+.special-dishes-section .first-part{
+    width: 50%;
+    display: flex;
+    height: 100%;
+
+}
+.special-dishes-section .first-part .number-title{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+
+}
+.special-dishes-section .first-part .descreption {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.special-dishes-section .first-part .descreption hr{
+    width: 30%;
+    height: 1px;
+    background-color: black;
+}
+.special-dishes-section .first-part .descreption h3{
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+
+}
+.special-dishes-section .first-part .descreption span{
+    color: red;
+}
+.special-dishes-section .first-part .descreption p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+
+}
+.special-dishes-section .first-part .descreption h5{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+}
+.special-dishes-section .first-part .descreption a{
+    font-family: 'Montserrat', sans-serif;
+    /* text-decoration: none;
+    background-color: red;
+    color: white;
+    height: 50px; */
+    background-color: rgb(245, 79, 79);
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0px 5px 30px 0px rgb(245, 122, 122);
+    transition: 0.5s; 
+
+
+}
+.special-dishes-section .second-part{
+    width: 50%;
+}
+.special-dishes-section .second-part img{
+    width: 90%;
+    height: 90%;
+
 }
