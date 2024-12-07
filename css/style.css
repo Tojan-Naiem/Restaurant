@@ -318,18 +318,18 @@ color: red;
 .special-dishes-section h2{
     font-size: 30px;
 }
-.special-dishes-section .title{
+ .title{
     text-align: center;
 
     
 }
-.special-dishes-section .title h5{
+.title h5{
     font-family: 'Raleway', sans-serif;
     color: red;
     font-weight: 300;
 
 }
-.special-dishes-section .title h2{
+ .title h2{
     font-weight: 800;
 }
 .special-dishes-section .body{
@@ -409,3 +409,87 @@ color: red;
     height: 90%;
 
 }
+
+/* Our Menu Section */
+.our-menu{
+    background-color: white;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:70px;
+    align-items: center;
+
+}
+.our-menu .body{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+.our-menu .body .col{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    margin-right: 25px;
+    
+}
+
+.our-menu .body .col .food-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+
+
+
+}
+.our-menu .body .col .food-cards .food-card{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+.our-menu .body .col .title h6{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+
+
+}
+.our-menu .body .col .food-cards .food-card img{
+    border-radius: 50%;
+    height: 100px;
+    transition: all .5s ease;  
+
+}
+.our-menu .body .col .food-cards .food-card img:hover{
+ transform: scale(1.1);
+   
+}
+
+.our-menu .body .col .food-cards .food-card .img-desc{
+   display: flex;
+   width: 100%;
+   align-items: center;
+
+}
+.our-menu .body .col .food-cards .food-card .img-desc .descreption{
+    margin-top: 15px;
+    margin-left: 20px;
+ 
+ }
+ .food-cards hr{
+    margin-top: 15px;
+    color: rgb(167, 165, 165);
+    border: 1px dashed rgb(167, 165, 165);
+ }
