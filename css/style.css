@@ -7,13 +7,11 @@
     src: url('path-to-font-file.woff2') format('woff2');
 }
 html{
-    /* font-family: sans-serif; */
 }
 body{
     height: 100vh;
     width: 100%;
     background-color: rgb(244, 237, 229);
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 100;
 }
 .container{
@@ -493,3 +491,98 @@ color: red;
     color: rgb(167, 165, 165);
     border: 1px dashed rgb(167, 165, 165);
  }
+.slider{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/testi-bg.jpg');
+    margin: 0 20px 50px 20px;
+   height: 90vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-bottom: 100px;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+
+
+}
+
+.slider .title{
+    margin-top: 100px;
+}
+.slider .content{
+    width: 100%;
+    height: 100%;
+}
+.slider .content .title h5{
+    color: red;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.slider .title h6{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+ #carouselExampleIndicators  {
+    height: 90%;
+    width: 100%;
+}
+#carouselExampleIndicators img{
+    height: 100%;
+}
+
+.carousel-indicators li {
+    list-style: none;
+}
+.carousel-item {
+    position: relative;
+    background-size: cover; /* يجعل الصورة تغطي كامل العنصر */
+    background-position: center; /* يحافظ على الصورة في المنتصف */
+    height: 100vh; /* اضبط الارتفاع كما تشاء */
+}
+
+.carousel-caption  {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    color: white;
+    width: 80%;
+}
+.carousel-caption i{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.carousel-caption h5 {
+   color: white;
+   font-size: 35px;
+   font-weight: 200;
+   font-style: italic;
+   font-family: 'Josefin Sans', sans-serif;
+   margin-bottom: 80px;
+}
+.carousel-caption p{
+    
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+} 
+
+.carousel-caption span{
+    color: red;
+    font-weight: 700;
+}
+
+.our-team{
+    background-color: rgb(247, 248, 249);
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:70px;
+    height: 100vh;
+}
