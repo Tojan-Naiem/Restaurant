@@ -76,12 +76,7 @@ header .list{
         display: none;
     }
 }
-.contant{
-    height: 100vh;
-  
 
-
-}
  .first-section{
     display: flex;
     margin-top: 50px;
@@ -93,8 +88,8 @@ header .list{
     margin: 0 20px 0px 20px;
 
 }
- .first-one{
-}
+
+
 .first-one h1,h2{
     font-size: 50px;
     font-family: 'Raleway', sans-serif;
@@ -201,7 +196,15 @@ header .list{
     font-size: 20px;
 
 }
-@media (max-width:800px){
+@media (max-width:700px){
+    .first-section{
+        flex-direction: column;
+    }
+    .second-one{
+        width: 100%;
+    }
+}
+/* @media (max-width:800px){
     .second-one img{
         display: none;
     }
@@ -214,7 +217,7 @@ header .list{
     .first-one .buttons a:last-of-type{
         display: none;
     }
-}
+} */
 .second-section{
   
     padding: 30px;
@@ -222,7 +225,6 @@ header .list{
     padding-right: 80px;
     margin: 0 20px 0px 20px;
     background-color: white;
-    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,6 +284,19 @@ color: red;
     margin-bottom: 10px;
 }
 @media (max-width:700px){
+    .second-section{
+flex-direction: column;
+    }
+    .second-section .first-part{
+        width: 100%;
+    }
+    .second-section .second-part .cards{
+        flex-direction: column;
+    }
+
+
+}
+/* @media (max-width:700px){
     .second-section .first-part {
         display: none;
     }
@@ -290,13 +305,13 @@ color: red;
     }
     .second-section .second-part p{
         display: -webkit-box;
-        -webkit-line-clamp: 3; /* عدد الأسطر التي يمكن عرضها */
+        -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
         overflow: hidden;
 
     }
   
-}
+} */
 
 
 /* special-dishes-section */
@@ -407,6 +422,22 @@ color: red;
     height: 90%;
 
 }
+@media (max-width:700px){
+    .special-dishes-section .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .special-dishes-section .first-part{
+        width: 100%;
+        display: flex;
+        height: 100%;
+    
+    }
+    .special-dishes-section .second-part{
+    width: 100%;
+    }
+}
 
 /* Our Menu Section */
 .our-menu{
@@ -424,7 +455,7 @@ color: red;
 }
 .our-menu .body{
     width: 100%;
-    height: 90vh;
+   
     display: flex;
     margin-top: 70px;
     justify-content: space-around;
@@ -486,11 +517,22 @@ color: red;
     margin-left: 20px;
  
  }
+ 
  .food-cards hr{
     margin-top: 15px;
     color: rgb(167, 165, 165);
     border: 1px dashed rgb(167, 165, 165);
  }
+ @media (max-width:700px){
+    .our-menu .body{
+        flex-direction: column;
+    }
+}
+
+
+
+ /* Foood */
+ 
 .slider{
    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/testi-bg.jpg');
    margin: 0 20px 0px 20px;
@@ -642,6 +684,24 @@ color: red;
     height: 100px;
 
 }
+@media (max-width:700px){
+    .our-team .team-members{
+     flex-direction: column;
+     padding: 5px;
+    }
+    .our-team .team-members .card1{
+        width: 100%;
+    }
+    .our-team .team-members .card2{
+        width: 100%;
+    }
+
+    .our-team .team-members .card3{
+        width: 100%;
+    }
+
+
+}
 
 /* Book Section */
 
@@ -686,4 +746,13 @@ color: red;
 }
 footer{
     height: 100vh;
+}
+@media (max-width:700px){
+    .book-section form{
+    
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    }
+
 }
